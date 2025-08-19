@@ -1,0 +1,272 @@
+body {
+            margin: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(135deg, #24292e 0%, #5865f2 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        nav {
+            width: 100vw;
+            background: rgba(36,41,46,0.98);
+            box-shadow: 0 2px 12px #0002;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+        .nav-content {
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1.5rem;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+        .nav-logo img {
+            width: 38px;
+            height: 38px;
+        }
+        .nav-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s;
+            padding: 0.3rem 0.7rem;
+            border-radius: 6px;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            background: #2ea44f;
+            color: #fff;
+        }
+        .container {
+            background: rgba(36,41,46,0.95);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+            padding: 3rem 2.5rem;
+            max-width: 420px;
+            text-align: center;
+            margin-top: 5.5rem;
+        }
+        .logo {
+            width: 80px;
+            margin-bottom: 1.2rem;
+            filter: drop-shadow(0 2px 8px #0008);
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin: 0.5rem 0 0.7rem 0;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #b3b3b3;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: #2ea44f;
+            color: #fff;
+            font-weight: bold;
+            padding: 0.9em 2.2em;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin-top: 1.2rem;
+            transition: background 0.2s;
+            box-shadow: 0 4px 16px #2ea44f44;
+        }
+        .cta-btn:hover {
+            background: #238636;
+        }
+        .footer {
+            margin-top: 2.5rem;
+            font-size: 0.95rem;
+            color: #b3b3b3;
+            letter-spacing: 0.5px;
+        }
+        @media (max-width: 700px) {
+            .nav-content {
+                flex-direction: column;
+                gap: 0.5rem;
+                padding: 0 0.5rem;
+            }
+            .container {
+                padding: 2rem 1rem;
+                max-width: 95vw;
+                margin-top: 6.5rem;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+        }
+
+        .about-team {
+    
+    margin-top: 8%;
+    max-width: 100%;
+    width: 1240px;
+    background: rgba(36,41,46,0.92);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px #0002;
+    padding: 2rem 1rem 2.5rem 1rem;
+    text-align: center;
+}
+.about-team h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2ea44f;
+    letter-spacing: 1px;
+}
+.team-tree {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    align-items: center;
+}
+.team-level {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+}
+.member {
+    background: rgba(255,255,255,0.07);
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 2px 8px #0002;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+}
+.member img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 0.7rem;
+    border: 3px solid #2ea44f;
+    background: #fff;
+}
+.member .role {
+    font-weight: 700;
+    color: #2ea44f;
+    margin-bottom: 0.3rem;
+    font-size: 1.05rem;
+}
+.member .name {
+    font-size: 1rem;
+    color: #fff;
+}
+.member.lead img {
+    width: 90px;
+    height: 90px;
+    border-width: 4px;
+}
+.member.lead .role {
+    font-size: 1.15rem;
+}
+@media (max-width: 1082px) {
+    .about-team {
+        padding: 1.2rem 0.2rem 1.5rem 0.2rem;
+    }
+    .team-level {
+        gap: 1.2rem;
+        flex-wrap: wrap;
+    }
+    .member {
+        min-width: 90px;
+        padding: 0.7rem 0.5rem;
+    }
+}
+
+
+/* Hero Section and Introduction */
+.hero {
+    width: 100vw;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #24292e 0%, #5865f2 100%);
+    margin-top: 0;
+    padding-top: 4.5rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+.Introduction {
+    background: rgba(36,41,46,0.92);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 2.5rem 2rem;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.Introduction h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2ea44f;
+    letter-spacing: 1px;
+}
+
+.Introduction .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    color: #b3b3b3;
+    font-weight: 500;
+}
+
+.Introduction p {
+    font-size: 1.05rem;
+    color: #e0e0e0;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        min-height: 40vh;
+        padding-top: 2.5rem;
+        padding-bottom: 1rem;
+    }
+    .Introduction {
+        padding: 1.2rem 0.7rem;
+        max-width: 95vw;
+    }
+    .Introduction h1 {
+        font-size: 1.5rem;
+    }
+    .Introduction .subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Smooth scroll behavior for all anchor links */
+html {
+    scroll-behavior: smooth;
+}
